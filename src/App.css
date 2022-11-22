@@ -1,38 +1,98 @@
-.App {
+.success {
+  background: #e5e5e5;
+}
+.success__container {
   text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px 20px 0 0;
+}
+.sucess__flex {
+  padding: 0 1rem;
+}
+.sucess__flex p {
+  margin-left: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sucess__flex p label {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  color: #667386;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sucess__flex {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sucess__flex input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.checkmark {
+  position: absolute;
+  top: 9px;
+  left: 5%;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sucess__flex :hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.sucess__flex input:checked ~ .checkmark {
+  background-color: #004dff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sucess__flex input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sucess__flex .checkmark:after {
+  left: 9px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #04004d;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sucess_btn {
+  padding: 0 1rem;
+}
+.sucess_btn button {
+  width: 100%;
+  padding: 0.8rem;
+  text-transform: uppercase;
+}
+
+.active {
+  background: #bbcffb;
+  box-shadow: 0px 7px 20px rgba(21, 79, 212, 0.1);
+  border-radius: 6px;
+  color: #004dff;
 }

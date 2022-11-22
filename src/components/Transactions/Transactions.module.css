@@ -1,0 +1,85 @@
+.transactions__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.transactions__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.transactions__name {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+.transactions__name img {
+  border-radius: 12px;
+}
+.transactions__name h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+.transactions__name p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+.transactions_usd {
+  display: grid;
+  align-items: center;
+}
+.transactions_usd p {
+  margin: 0;
+  font-size: 16px;
+  color: #ff0366;
+  font-weight: bold;
+}
+/* App */
+
+.app {
+  width: 100%;
+  height: 172px;
+  background: #554cff;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  border-radius: 0 0 20px 20px;
+  background: url(../../image//backgroundblue.png) no-repeat;
+  background-size: 100%;
+  /* clip-path: polygon(50% 0%, 100% 4%, 100% 100%, 0 100%, 0 4%); */
+}
+.app__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.app__button__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+.app__button {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 20px 20px rgba(41, 39, 77, 0.15);
+  backdrop-filter: blur(11px);
+  border-radius: 15px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  margin-top: 10px;
+}
+
+.app__button_click p {
+  font-size: 11px;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
